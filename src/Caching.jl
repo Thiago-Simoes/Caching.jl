@@ -52,6 +52,7 @@ export AbstractCache,
        persist!,
        empty!,
        @cache,
+       @cache_ttl,
        @syncache!,
        @persist!,
        @empty!
@@ -59,5 +60,6 @@ export AbstractCache,
 include("cache.jl")
 include("utils.jl")
 include("file.jl")
+include("ttl.jl")
 
 end  # module
